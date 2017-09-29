@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  <link rel="stylesheet" type="text/css" href="css/notas.css" />
+  <title>Libreta de Notas</title>
+</head>
+
+<body>
+  <div class="header">
+    <h2>Libreta de Notas</h2>
+  </div>
+
+  <div class="note-editor" id="note-editor">
+	<input class="titulo" type="text" name="titulo" id="titulo" placeholder="Titulo" required />
+    <br>
+    <textarea class="comentario" name="comentario" id="comentario" placeholder="Añadir comentario"></textarea>
+    <br>
+    <button class="salvar" id="salvar">Guardar NOTA</button>
+	<br>
+	<hr width="100%" color="#DFDFDF">
+  </div>  
+
+  
+  <div class="notes-list-container">
+    <button class="anadir" id="anadir">Añadir NOTA</button>
+	&nbsp 
+	<button class="limpiar" id="limpiar">Borrar TODO</button>
+	<br><br>
+	<div class="notes-list" id="notes-list">
+    </div>
+  </div>
+
+  
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="js/fastclick.js"></script>
+  <script type="text/javascript" src="js/notes.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+
+  <footer class="footer">
+    <h4> Autor: PongoyQuito. </h4>
+  </footer>
+</body>
+
+</html>
